@@ -7,4 +7,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY move.py .
 
-ENTRYPOINT ["python","move.py"]
+WORKDIR /workdir
+ENTRYPOINT ["python","/usr/src/app/move.py"]
